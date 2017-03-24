@@ -2,7 +2,7 @@
 	"name" : "MadClap",
 	"version" : 1,
 	"creationdate" : -770981333,
-	"modificationdate" : -768588448,
+	"modificationdate" : -721749867,
 	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -19,6 +19,11 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"US2.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
@@ -48,5 +53,8 @@
 ,
 	"detailsvisible" : 0,
 	"amxdtype" : 1633771873,
-	"readonly" : 0
+	"readonly" : 0,
+	"devpathtype" : 0,
+	"devpath" : ".",
+	"sortmode" : 0
 }
