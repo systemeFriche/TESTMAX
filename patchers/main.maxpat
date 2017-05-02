@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 179.0, 79.0, 1133.0, 688.0 ],
+		"rect" : [ 476.0, 79.0, 1133.0, 688.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,13 +36,115 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"boxes" : [  ],
-		"lines" : [  ],
-		"parameters" : 		{
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 210.0, 395.0, 80.0, 60.0 ]
+				}
 
-		}
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "chickens.mp4",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u881000411" ],
+									"dim" : [ 1, 1 ],
+									"output_texture" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"loopreport" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"time" : [ 0 ],
+									"automatic" : [ 0 ],
+									"rate" : [ 1.0 ],
+									"loopend" : [ 0 ],
+									"engine" : [ "avf" ],
+									"adapt" : [ 1 ],
+									"loopstart" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"moviefile" : [ "" ],
+									"colormode" : [ "argb" ],
+									"autostart" : [ 1 ],
+									"time_secs" : [ 0.0 ],
+									"position" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"texture_name" : [ "u893000409" ],
+									"framereport" : [ 0 ]
+								}
+
+							}
+ ]
+					}
 ,
-		"dependency_cache" : [  ],
+					"id" : "obj-3",
+					"maxclass" : "jit.playlist",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "jit_matrix", "", "dictionary" ],
+					"patching_rect" : [ 204.0, 182.0, 150.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 210.0, 267.0, 34.0, 22.0 ],
+					"style" : "",
+					"text" : "US2"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "US2.maxpat",
+				"bootpath" : "~/Documents/GitKraken/TESTMAX/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chickens.mp4",
+				"bootpath" : "C74:/media/jitter",
+				"type" : "mpg4",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "newobjBlue-1",
