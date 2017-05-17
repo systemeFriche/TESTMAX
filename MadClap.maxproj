@@ -2,7 +2,7 @@
 	"name" : "MadClap",
 	"version" : 1,
 	"creationdate" : -770981454,
-	"modificationdate" : 3577898083,
+	"modificationdate" : 3577898747,
 	"viewrect" : [ 25.0, 69.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -19,6 +19,11 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"V2.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
