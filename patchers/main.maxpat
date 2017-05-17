@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 395.0, 108.0, 975.0, 661.0 ],
+		"rect" : [ 353.0, 85.0, 975.0, 661.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,88 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 542.0, 372.0, 171.0, 112.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "chickens.mp4",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u590000407" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"loopstart" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ],
+									"texture_name" : [ "u647000405" ],
+									"loopreport" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"autostart" : [ 1 ],
+									"unique" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"output_texture" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"loopend" : [ 0 ],
+									"interp" : [ 0 ],
+									"framereport" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"drawto" : [ "" ],
+									"automatic" : [ 0 ],
+									"adapt" : [ 1 ],
+									"time" : [ 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-7",
+					"maxclass" : "jit.playlist",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "jit_matrix", "", "dictionary" ],
+					"patching_rect" : [ 501.0, 26.0, 150.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 526.0, 195.0, 100.0, 22.0 ],
+					"style" : "",
+					"text" : "V2.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 346.0, 385.0, 190.0, 147.0 ]
+					"patching_rect" : [ 74.0, 372.0, 190.0, 147.0 ]
 				}
 
 			}
@@ -94,7 +170,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
-					"patching_rect" : [ 334.0, 111.0, 150.0, 30.0 ],
+					"patching_rect" : [ 62.0, 98.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -106,7 +182,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 346.0, 230.0, 100.0, 22.0 ],
+					"patching_rect" : [ 74.0, 217.0, 100.0, 22.0 ],
 					"style" : "",
 					"text" : "V3.maxpat"
 				}
@@ -124,10 +200,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -140,8 +234,20 @@
 			}
 , 			{
 				"name" : "blading.mov",
-				"bootpath" : "C74:/media/jitter",
+				"bootpath" : "~/Documents/GitKraken/TESTMAX/media",
 				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "V2.maxpat",
+				"bootpath" : "~/Documents/GitKraken/TESTMAX/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chickens.mp4",
+				"bootpath" : "~/Documents/GitKraken/TESTMAX/media",
+				"type" : "mpg4",
 				"implicit" : 1
 			}
  ],
