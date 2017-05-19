@@ -38,6 +38,85 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 331.0, 379.0, 171.0, 112.0 ],
+					"presentation_rect" : [ 331.0, 379.0, 0.0, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "chickens.mp4",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u590000407" ],
+									"dim" : [ 1, 1 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"vol" : [ 1.0 ],
+									"engine" : [ "avf" ],
+									"texture_name" : [ "u647000405" ],
+									"unique" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"adapt" : [ 1 ],
+									"loopstart" : [ 0 ],
+									"drawto" : [ "" ],
+									"autostart" : [ 1 ],
+									"loopend" : [ 0 ],
+									"interp" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"moviefile" : [ "" ],
+									"colormode" : [ "argb" ],
+									"framereport" : [ 0 ],
+									"rate" : [ 1.0 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-6",
+					"maxclass" : "jit.playlist",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "jit_matrix", "", "dictionary" ],
+					"patching_rect" : [ 290.0, 33.0, 150.0, 30.0 ],
+					"presentation_rect" : [ 290.0, 33.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 315.0, 202.0, 100.0, 22.0 ],
+					"presentation_rect" : [ 315.0, 202.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "V2.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
@@ -58,31 +137,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u590000407" ],
 									"dim" : [ 1, 1 ],
-									"engine" : [ "avf" ],
-									"moviefile" : [ "" ],
-									"time_secs" : [ 0.0 ],
-									"rate" : [ 1.0 ],
-									"loopstart" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"position" : [ 0.0 ],
-									"texture_name" : [ "u647000405" ],
-									"loopreport" : [ 0 ],
-									"vol" : [ 1.0 ],
 									"dstrect" : [ 0, 0, 1, 1 ],
-									"autostart" : [ 1 ],
-									"unique" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"output_texture" : [ 0 ],
-									"usedstrect" : [ 0 ],
 									"looppoints" : [ 0, 0 ],
+									"vol" : [ 1.0 ],
+									"engine" : [ "avf" ],
+									"texture_name" : [ "u647000405" ],
+									"unique" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"adapt" : [ 1 ],
+									"loopstart" : [ 0 ],
+									"drawto" : [ "" ],
+									"autostart" : [ 1 ],
 									"loopend" : [ 0 ],
 									"interp" : [ 0 ],
-									"framereport" : [ 0 ],
-									"usesrcrect" : [ 0 ],
-									"drawto" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"usedstrect" : [ 0 ],
 									"automatic" : [ 0 ],
-									"adapt" : [ 1 ],
-									"time" : [ 0 ]
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"moviefile" : [ "" ],
+									"colormode" : [ "argb" ],
+									"framereport" : [ 0 ],
+									"rate" : [ 1.0 ],
+									"position" : [ 0.0 ]
 								}
 
 							}
@@ -134,31 +213,31 @@
 									"outputmode" : [ 1 ],
 									"out_name" : [ "u590000407" ],
 									"dim" : [ 1, 1 ],
-									"engine" : [ "avf" ],
-									"moviefile" : [ "" ],
-									"time_secs" : [ 0.0 ],
-									"rate" : [ 1.0 ],
-									"loopstart" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"position" : [ 0.0 ],
-									"texture_name" : [ "u647000405" ],
-									"loopreport" : [ 0 ],
-									"vol" : [ 1.0 ],
 									"dstrect" : [ 0, 0, 1, 1 ],
-									"autostart" : [ 1 ],
-									"unique" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"output_texture" : [ 0 ],
-									"usedstrect" : [ 0 ],
 									"looppoints" : [ 0, 0 ],
+									"vol" : [ 1.0 ],
+									"engine" : [ "avf" ],
+									"texture_name" : [ "u647000405" ],
+									"unique" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"adapt" : [ 1 ],
+									"loopstart" : [ 0 ],
+									"drawto" : [ "" ],
+									"autostart" : [ 1 ],
 									"loopend" : [ 0 ],
 									"interp" : [ 0 ],
-									"framereport" : [ 0 ],
-									"usesrcrect" : [ 0 ],
-									"drawto" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"loopreport" : [ 0 ],
+									"usedstrect" : [ 0 ],
 									"automatic" : [ 0 ],
-									"adapt" : [ 1 ],
-									"time" : [ 0 ]
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"moviefile" : [ "" ],
+									"colormode" : [ "argb" ],
+									"framereport" : [ 0 ],
+									"rate" : [ 1.0 ],
+									"position" : [ 0.0 ]
 								}
 
 							}
@@ -218,10 +297,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
@@ -309,8 +406,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
