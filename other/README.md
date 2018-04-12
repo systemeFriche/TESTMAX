@@ -3,18 +3,4 @@
 
 Ceci est un test
 
-
-mknsflsnfldsknf
-mkldfsdlknfsdlkfn
-
-
-lsdnfldsknfdslk
-=======
-# TESTMAX
->>>>>>> master
->>>>>>> 
->>>>>>> jhdsjhbdsjfhb
->>>>>>> 
->>>>>>> 
->>>>>>> j;bdsfjsdbfdsjfhb
->>>>>>> 
+11B
